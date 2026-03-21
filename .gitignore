@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# GCP Secrets
+*.json
+# Or specifically:
+src/main/resources/*.json
