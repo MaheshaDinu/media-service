@@ -11,3 +11,5 @@ gcp:
     project-id: project-fb6d543f-c464-45a3-8d9
     credentials:
         location: /project-fb6d543f-c464-45a3-8d9-a94b947a4042.json
+    bucket:
+        name: e_library_media_bucket
