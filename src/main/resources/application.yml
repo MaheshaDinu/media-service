@@ -1,11 +1,14 @@
-server:
-    port: 8082
+
 
 spring:
     application:
         name: media-service
     config:
         import: "optional:configserver:http://localhost:8888"
+
+    cloud:
+        config:
+            uri: http://localhost:8888
 
 gcp:
     project-id: project-fb6d543f-c464-45a3-8d9
