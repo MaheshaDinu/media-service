@@ -18,13 +18,14 @@ import com.google.cloud.storage.BlobInfo;
 import com.google.cloud.storage.Storage;
 import com.mahesha.media_service.service.MediaService;
 
-import lombok.RequiredArgsConstructor;
-
 @Service
-@RequiredArgsConstructor
 public class MediaServiceImpl implements MediaService {
 
     private final Storage storage;
+
+    public MediaServiceImpl(Storage storage) {
+        this.storage = storage;
+    }
 
     @Value("${gcp.bucket.name}")
     private String bucketName;
